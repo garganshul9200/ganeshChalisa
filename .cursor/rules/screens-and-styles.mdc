@@ -1,0 +1,25 @@
+---
+description: Themed screens, scaled styles, lists, and bottom-chrome offsets
+globs: src/screens/**/*.js,src/components/**/*.js,src/styles/**/*.js
+alwaysApply: false
+---
+
+# Screens and styles
+
+Colors come from `useTheme().colors` (`getThemeColors` in `constants/colors.ts`). Build styles with `createXStyles(colors)` and memoize on `colors`. Shared card surfaces extend `createTalapatraStyles`. No palette hex inside components.
+
+Size UI with `scale`, `moderateScale`, and `moderateVerticalScale` from `src/utils/scale.js` (375pt base). Do not add `react-native-size-matters`.
+
+Wrap every screen in `ScreenWrapper`. A custom header passes `isSafeArea={false}` and applies `insets.top` on the header. Bottom padding accounts for the banner and the mini player:
+
+```javascript
+const { colors } = useTheme();
+const styles = useMemo(() => createHomeScreenStyles(colors), [colors]);
+const { bannerBottomOffset } = useBannerAd();
+const listBottomPadding =
+  bannerBottomOffset + (currentChalisa ? MINI_PLAYER_HEIGHT : 0);
+```
+
+Lists use `FlatList`, `keyExtractor` on `id`, chunked paging, and `removeClippedSubviews`. Empty lists render `EmptyState` with a translated message. Deity and icon images use FastImage; icons come from `constants/imagePath`.
+
+Pass route data as params (`navigate('Detail', { item })`). Keep detail actions (favorite, share, report, font size) on the detail screen, not in the list card.

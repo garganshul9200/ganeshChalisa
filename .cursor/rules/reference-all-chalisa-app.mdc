@@ -1,0 +1,17 @@
+---
+description: Use AllChalisaApp as the primary reference codebase for this project
+alwaysApply: true
+---
+
+# Reference App
+
+When implementing features, UI, navigation, audio, content structure, styling, or patterns in this project, consult and mirror the existing app at:
+
+`/Users/anshulthakur/Desktop/ChalisaApp/AllChalisaApp`
+
+## How to use it
+
+- Prefer matching patterns, structure, and conventions from AllChalisaApp over inventing new approaches.
+- Before building screens, components, audio playback, chalisa content, or navigation, inspect the corresponding files there.
+- Adapt for Ganesh Chalisa specifically, but keep architecture and UX aligned with the reference app.
+- If something is unclear, look there first before asking or guessing.

@@ -1,0 +1,28 @@
+---
+description: Architecture for offline bilingual devotional apps (React Native CLI)
+alwaysApply: true
+---
+
+# Devotional content app
+
+React Native CLI, not Expo. JavaScript for screens and context. TypeScript only for typed constants and services (`colors`, `imagePath`, share, review). Hermes on. Native stack with `headerShown: false`. Call `enableScreens()` before `AppRegistry`.
+
+## Layout
+
+- `data/*.json` — bundled scripture; the reading path never fetches content
+- `src/screens/<Name>/` — screen plus its style factory
+- `src/components/`, `src/styles/`, `src/context/`, `src/services/`, `src/ads/`, `src/translations/`, `src/utils/`, `src/constants/`, `src/notifications/`
+
+## Provider order
+
+`SafeAreaProvider` → `ThemeProvider` → `LanguageProvider` → feature providers (favorites, audio) → `BannerAdProvider` → navigator. Global chrome (banner, mini player, update gate) sits beside the stack, not inside one screen. Navigate from that chrome through `navigationRef`.
+
+## State
+
+- Theme, language, favorites, and review counters persist in AsyncStorage. Keys start with `@`.
+- Context hooks throw when used outside their provider. Memoize provider values.
+- Memo screens and list cards. Wrap list handlers in `useCallback`.
+
+## Formatting
+
+Follow `.prettierrc.js`: single quotes, trailing commas, `arrowParens: avoid`.

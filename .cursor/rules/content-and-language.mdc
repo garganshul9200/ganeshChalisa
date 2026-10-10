@@ -1,0 +1,33 @@
+---
+description: Offline bilingual scripture model and UI strings
+globs: data/**/*.json,src/translations/**/*.js,src/constants/**/*.{js,ts},src/utils/chalisaAudio.js
+alwaysApply: false
+---
+
+# Content and language
+
+Each item is one JSON object: stable string `id`, bilingual `title`, image filename, verse arrays per language (`doha`, `chopai`), optional audio filename.
+
+```json
+{
+  "id": "1",
+  "title": { "hindi": "॥ श्री गणेश चालीसा ॥", "english": "Shri Ganesh Chalisa" },
+  "image": "shriGanesh.webp",
+  "audioUrl": "ganesh_chalisa.mp3"
+}
+```
+
+- JSON stores filenames only. Register every image and audio file in a `require()` map (`chalisaMedia`). Resolve with `getDeityImageSource` and `getChalisaAudioSource`.
+- Hide play controls when `hasChalisaAudio` is false. Next and previous skip items with no audio.
+- UI copy lives in `translations.js` under `hindi` and `english`. Screens use `translations[language]`. Default language is `hindi`.
+- Localized fields: `typeof value === 'object' ? value[language] : value`, then fall back to hindi, then english.
+
+```javascript
+// ❌ BAD
+<Text>Favorites</Text>
+<FastImage source={{ uri: item.image }} />
+
+// ✅ GOOD
+<Text>{t.favorites}</Text>
+<FastImage source={getDeityImageSource(item.image)} />
+```

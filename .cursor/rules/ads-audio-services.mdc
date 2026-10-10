@@ -1,0 +1,34 @@
+---
+description: Ads, global audio, and native feature gates
+globs: src/ads/**/*.js,src/context/**/*.js,src/services/**/*.{js,ts},src/notifications/**/*.js,App.js
+alwaysApply: false
+---
+
+# Ads, audio, and services
+
+## Ads
+
+Ad unit IDs live only in `src/ads/adConfig.js`. `getAdUnitId` returns Google `TestIds` when `__DEV__` is true. Honor `ADS_ENABLED`. Request `requestNonPersonalizedAdsOnly: true`.
+
+One global `BannerAd`. Screens read `useBannerAd()` and do not mount their own banner. Interstitials go through the open-count helper. Rewarded ads count real listen time; a seek must not count. Initialize Mobile Ads once at startup.
+
+```javascript
+// ❌ BAD
+InterstitialAd.createForAdRequest('ca-app-pub-xxx/yyy');
+
+// ✅ GOOD
+InterstitialAd.createForAdRequest(getAdUnitId('INTERSTITIAL'), {
+  requestNonPersonalizedAdsOnly: true,
+});
+```
+
+## Audio
+
+One `AudioProvider` owns a hidden `react-native-video` player. Play, pause, next, and previous go through that context. Lock-screen actions use the existing notification event names. Check `hasInternetAccess()` before playback and show the translated offline alert on failure. Reading stays available offline.
+
+## Native features
+
+- Lazy-require Notifee so a missing native link does not crash module import.
+- Share through `shareService`; ignore share-sheet cancellation.
+- Ask for a review only after completed reading or listening sessions, a cooldown, and a present native review module.
+- Schedule the daily reminder from a null component under `LanguageProvider` so the copy matches the active language.
