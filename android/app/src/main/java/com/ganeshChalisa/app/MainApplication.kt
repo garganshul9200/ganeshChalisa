@@ -1,4 +1,4 @@
-package com.ganeshchalisa
+package com.ganeshChalisa.app
 
 import android.app.Application
 import com.facebook.react.PackageList

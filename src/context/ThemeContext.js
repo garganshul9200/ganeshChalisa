@@ -1,17 +1,16 @@
-import React, {createContext, useCallback, useContext, useMemo, useState} from 'react';
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from 'react';
 import {getThemeColors} from '../constants/colors';
 
 const ThemeContext = createContext(null);
 
 export const ThemeProvider = ({children}) => {
   const [theme, setThemeState] = useState('light');
-
-  const setTheme = useCallback(mode => {
-    if (mode !== 'light' && mode !== 'dark') {
-      return;
-    }
-    setThemeState(mode);
-  }, []);
 
   const toggleTheme = useCallback(() => {
     setThemeState(prev => (prev === 'light' ? 'dark' : 'light'));
@@ -20,8 +19,8 @@ export const ThemeProvider = ({children}) => {
   const colors = useMemo(() => getThemeColors(theme), [theme]);
 
   const value = useMemo(
-    () => ({theme, setTheme, toggleTheme, colors}),
-    [theme, setTheme, toggleTheme, colors],
+    () => ({theme, toggleTheme, colors}),
+    [theme, toggleTheme, colors],
   );
 
   return (

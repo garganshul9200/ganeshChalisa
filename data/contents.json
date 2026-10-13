@@ -1,0 +1,217 @@
+[
+  {
+    "id": "ganesh-chalisa",
+    "type": "chalisa",
+    "title": {
+      "hindi": "॥ श्री गणेश चालीसा ॥",
+      "english": "Shri Ganesh Chalisa",
+      "hinglish": "Shri Ganesh Chalisa"
+    },
+    "image": "shriGanesh.webp",
+    "doha": {
+      "hindi": [
+        "जय गणपति सदगुण सदन, कविवर बदन कृपाल।",
+        "विघ्न हरण मंगल करण, जय जय गिरिजालाल॥"
+      ],
+      "hinglish": [
+        "Jai Ganpati sadgun sadan, kavivar badan kripal |",
+        "Vighna haran mangal karan, jai jai Girijalal ||"
+      ],
+      "english": [
+        "Jai Ganpati sadgun sadan, kavivar badan kripal |",
+        "Vighna haran mangal karan, jai jai Girijalal ||"
+      ]
+    },
+    "chopai": {
+      "hindi": [
+        "जय जय जय गणपति गणराजू।",
+        "मंगल भरण करण शुभ काजू॥",
+        "जय गजबदन सदन सुखदाता।",
+        "विश्व विनायक बुद्धि विधाता॥",
+        "वक्र तुण्ड शुचि शुण्ड सुहावन।",
+        "तिलक त्रिपुण्ड भाल मन भावन॥",
+        "राजत मणि मुक्तन उर माला।",
+        "स्वर्ण मुकुट शिर नयन विशाला॥",
+        "पुस्तक पाणि कुठार त्रिशूलं।",
+        "मोदक भोग सुगन्धित फूलं॥",
+        "सुन्दर पीताम्बर तन साजित।",
+        "चरण पादुका मुनि मन राजित॥",
+        "धनि शिवसुवन गौरी के नन्दन।",
+        "गौरी गणेश विश्व वन्दन॥",
+        "रिद्धि सिद्धि तव चँवर सुधारे।",
+        "मूषक वाहन सोहत द्वारे॥",
+        "जबहिं गजमुख नाम बखाने।",
+        "समर विजय के हेतु सुजाने॥",
+        "देवों पर जब संकट आयो।",
+        "तब ही सहाय आप ही पायो॥",
+        "प्रथम पूज्य सब देवन माही।",
+        "बिना कृपा तव काज न होई॥",
+        "अब प्रभु विनय करहुं कर जोरी।",
+        "विसरो नाथ दोष सब मोरी॥",
+        "शरण आए की लाज राखियो।",
+        "सदा कृपा की वर्षा करियो॥",
+        "अष्ट सिद्धि नव निधि के दाता।",
+        "बुद्धि विधाता भाग्य विधाता॥",
+        "मंगल मूरति रूप सुहावन।",
+        "संकट हरण सुजन मन भावन॥",
+        "जो यह पाठ करे मन लाई।",
+        "ता पर होत गणेश सहाई॥"
+      ],
+      "hinglish": [
+        "Jai jai jai Ganpati Ganraju |",
+        "Mangal bharan karan shubh kaju ||",
+        "Jai Gajbadan sadan sukhdata |",
+        "Vishva Vinayak buddhi vidhata ||",
+        "Vakra tunda shuchi shunda suhavan |",
+        "Tilak tripunda bhaal man bhavan ||",
+        "Rajat mani muktan ur mala |",
+        "Swarna mukut shir nayan vishala ||",
+        "Pustak paani kuthar trishoolam |",
+        "Modak bhog sugandhit phoolam ||",
+        "Sundar peetamber tan saajit |",
+        "Charan paduka muni man raajit ||",
+        "Dhani Shivsuvan Gauri ke nandan |",
+        "Gauri Ganesh vishva vandan ||",
+        "Riddhi Siddhi tav chanvar sudhare |",
+        "Mooshak vahan sohat dware ||",
+        "Jabahi Gajmukh naam bakhane |",
+        "Samar vijay ke hetu sujane ||",
+        "Devon par jab sankat aayo |",
+        "Tab hi sahay aap hi paayo ||",
+        "Pratham poojya sab devan mahi |",
+        "Bina kripa tav kaaj na hoi ||",
+        "Ab Prabhu vinay karahu kar jori |",
+        "Visaro Nath dosh sab mori ||",
+        "Sharan aaye ki laaj rakhiyo |",
+        "Sada kripa ki varsha kariyo ||",
+        "Asht siddhi nav nidhi ke data |",
+        "Buddhi vidhata bhagya vidhata ||",
+        "Mangal moorti roop suhavan |",
+        "Sankat haran sujan man bhavan ||",
+        "Jo yeh paath kare man lai |",
+        "Ta par hot Ganesh sahai ||"
+      ],
+      "english": [
+        "Jai jai jai Ganpati Ganraju |",
+        "Mangal bharan karan shubh kaju ||",
+        "Jai Gajbadan sadan sukhdata |",
+        "Vishva Vinayak buddhi vidhata ||",
+        "Vakra tunda shuchi shunda suhavan |",
+        "Tilak tripunda bhaal man bhavan ||",
+        "Rajat mani muktan ur mala |",
+        "Swarna mukut shir nayan vishala ||",
+        "Pustak paani kuthar trishoolam |",
+        "Modak bhog sugandhit phoolam ||",
+        "Sundar peetamber tan saajit |",
+        "Charan paduka muni man raajit ||",
+        "Dhani Shivsuvan Gauri ke nandan |",
+        "Gauri Ganesh vishva vandan ||",
+        "Riddhi Siddhi tav chanvar sudhare |",
+        "Mooshak vahan sohat dware ||",
+        "Jabahi Gajmukh naam bakhane |",
+        "Samar vijay ke hetu sujane ||",
+        "Devon par jab sankat aayo |",
+        "Tab hi sahay aap hi paayo ||",
+        "Pratham poojya sab devan mahi |",
+        "Bina kripa tav kaaj na hoi ||",
+        "Ab Prabhu vinay karahu kar jori |",
+        "Visaro Nath dosh sab mori ||",
+        "Sharan aaye ki laaj rakhiyo |",
+        "Sada kripa ki varsha kariyo ||",
+        "Asht siddhi nav nidhi ke data |",
+        "Buddhi vidhata bhagya vidhata ||",
+        "Mangal moorti roop suhavan |",
+        "Sankat haran sujan man bhavan ||",
+        "Jo yeh paath kare man lai |",
+        "Ta par hot Ganesh sahai ||"
+      ]
+    },
+    "dohaAtEnd": {
+      "hindi": [
+        "संवत अपने सहस्र दश, ऋषि पंचमी दिनेश।",
+        "पूरण चालीसा भयो, मंगल मूर्ति गणेश॥"
+      ],
+      "hinglish": [
+        "Samvat apne sahasra dash, rishi panchami dinesh |",
+        "Pooran Chalisa bhayo, mangal moorti Ganesh ||"
+      ],
+      "english": [
+        "Samvat apne sahasra dash, rishi panchami dinesh |",
+        "Pooran Chalisa bhayo, mangal moorti Ganesh ||"
+      ]
+    },
+    "audioUrl": "ganesh_chalisa.mp3"
+  },
+  {
+    "id": "ganesh-aarti",
+    "type": "aarti",
+    "title": {
+      "hindi": "॥ श्री गणेश आरती ॥",
+      "english": "Shri Ganesh Aarti",
+      "hinglish": "Shri Ganesh Aarti"
+    },
+    "image": "shriGanesh.webp",
+    "verses": {
+      "hindi": [
+        "सुखकर्ता दुखहर्ता वार्ता विघ्नाची।",
+        "नुरवी पुरवी प्रेम कृपा जयघ्नाची॥",
+        "सर्वांगी सुन्दर उटी शेंदुराची।",
+        "कंठी झळके माळ मुक्ताफळांची॥",
+        "जय देव जय देव जय मंगलमूर्ती।",
+        "दर्शनमात्रे मनकामना पुरती॥",
+        "रत्नखचित फरा तुझ गौरीकुमरा।",
+        "चंदनाची उटी कुमकुम केशरा॥",
+        "हिरेजडित मुकुट शोभतो बरा।",
+        "रुणझुणती नूपुरे चरणी घागरिया॥",
+        "जय देव जय देव जय मंगलमूर्ती।",
+        "दर्शनमात्रे मनकामना पुरती॥",
+        "लंबोदर पीतांबर फनिवर वंदना।",
+        "सरळ सोंड वक्रतुण्ड त्रिनयना॥",
+        "दास रामाचा वाट पाहे सदना।",
+        "संकटी पावावे निर्वाणी रक्षावे सुरवर वंदना॥",
+        "जय देव जय देव जय मंगलमूर्ती।",
+        "दर्शनमात्रे मनकामना पुरती॥"
+      ],
+      "english": [
+        "O remover of sorrow and giver of joy, destroyer of obstacles.",
+        "Fill us with love and grace, O victorious Lord.",
+        "Your form is beautiful, adorned with sacred red powder.",
+        "A garland of pearls shines upon your neck.",
+        "Glory to God, glory to the auspicious form.",
+        "Your darshan fulfills the heart's desires.",
+        "O son of Gauri, adorned with jewelled ornaments.",
+        "Sandal paste, kumkum and saffron grace you.",
+        "Your gem-studded crown shines beautifully.",
+        "Anklets jingle sweetly at your feet.",
+        "Glory to God, glory to the auspicious form.",
+        "Your darshan fulfills the heart's desires.",
+        "O large-bellied Lord in yellow robes, we bow to you.",
+        "With straight trunk, curved tusk and three eyes.",
+        "Your devotee Ram waits at your door.",
+        "In trouble protect us; grant liberation, O Lord of gods.",
+        "Glory to God, glory to the auspicious form.",
+        "Your darshan fulfills the heart's desires."
+      ],
+      "hinglish": [
+        "Sukhkarta dukhharta varta vighnachi.",
+        "Nuravi puravi prem kripa jayaghachi.",
+        "Sarvangi sundar uti shendurachi.",
+        "Kanthi jhalke maal muktafalanchi.",
+        "Jai Dev jai Dev jai Mangalmurtі.",
+        "Darshanmatre mankamana purti.",
+        "Ratnakhachit phara tujh Gaurikumara.",
+        "Chandanachi uti kumkum keshara.",
+        "Hirejadit mukut shobhato bara.",
+        "Runjhunti nupure charani ghagariya.",
+        "Jai Dev jai Dev jai Mangalmurtі.",
+        "Darshanmatre mankamana purti.",
+        "Lambodar pitambar phanivar vandana.",
+        "Saral sond vakratunda trinayana.",
+        "Das Ramacha vaat pahe sadana.",
+        "Sankati pavave nirvani rakshave suravar vandana.",
+        "Jai Dev jai Dev jai Mangalmurtі.",
+        "Darshanmatre mankamana purti."
+      ]
+    }
+  }
+]

@@ -1,25 +1,20 @@
 import React, {memo, useMemo} from 'react';
 import {Modal, Pressable, StyleSheet, Text, View} from 'react-native';
+import {useLanguage} from '../context/LanguageContext';
 import {useTheme} from '../context/ThemeContext';
 import {moderateScale, scale} from '../utils/scale';
-import {
-  GlobeIcon,
-  MoonIcon,
-  SettingsIcon,
-  ShareIcon,
-  StarIcon,
-} from './icons';
+import {GlobeIcon, MoonIcon, ShareIcon, StarIcon} from './icons';
 
 const MENU_ITEMS = [
-  {key: 'settings', label: 'Settings', Icon: SettingsIcon},
-  {key: 'language', label: 'Change Language', Icon: GlobeIcon},
-  {key: 'theme', label: 'Change Theme', Icon: MoonIcon},
-  {key: 'share', label: 'Share App', Icon: ShareIcon},
-  {key: 'rate', label: 'Rate App', Icon: StarIcon},
+  {key: 'language', labelKey: 'changeLanguage', Icon: GlobeIcon},
+  {key: 'theme', labelKey: 'changeTheme', Icon: MoonIcon},
+  {key: 'share', labelKey: 'shareApp', Icon: ShareIcon},
+  {key: 'rate', labelKey: 'rateApp', Icon: StarIcon},
 ];
 
 const HomeMenu = memo(({visible, onClose, onSelect, anchorTop}) => {
   const {colors} = useTheme();
+  const {t} = useLanguage();
   const styles = useMemo(() => createStyles(colors), [colors]);
 
   return (
@@ -39,7 +34,7 @@ const HomeMenu = memo(({visible, onClose, onSelect, anchorTop}) => {
               ]}
               onPress={() => onSelect(item.key)}>
               <item.Icon size={moderateScale(18)} color={colors.text} />
-              <Text style={styles.label}>{item.label}</Text>
+              <Text style={styles.label}>{t[item.labelKey]}</Text>
             </Pressable>
           ))}
         </View>

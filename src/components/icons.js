@@ -1,9 +1,12 @@
 import React, {memo} from 'react';
 import Svg, {Circle, Path, Rect} from 'react-native-svg';
 
-const defaults = {width: 22, height: 22, strokeWidth: 1.6};
-
-const Icon = memo(function Icon({children, size = 22, color = '#3C2415', strokeWidth = 1.6}) {
+const Icon = memo(function Icon({
+  children,
+  size = 22,
+  color = '#3C2415',
+  strokeWidth = 1.6,
+}) {
   return (
     <Svg
       width={size}
@@ -27,28 +30,21 @@ export const MenuDotsIcon = memo(({size = 20, color = '#3C2415'}) => (
   </Svg>
 ));
 
-export const SettingsIcon = memo(props => (
-  <Icon {...defaults} {...props}>
-    <Circle cx="12" cy="12" r="3" />
-    <Path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
-  </Icon>
-));
-
 export const GlobeIcon = memo(props => (
-  <Icon {...defaults} {...props}>
+  <Icon {...props}>
     <Circle cx="12" cy="12" r="9" />
     <Path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
   </Icon>
 ));
 
 export const MoonIcon = memo(props => (
-  <Icon {...defaults} {...props}>
+  <Icon {...props}>
     <Path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z" />
   </Icon>
 ));
 
 export const ShareIcon = memo(props => (
-  <Icon {...defaults} {...props}>
+  <Icon {...props}>
     <Circle cx="18" cy="5" r="2.5" />
     <Circle cx="6" cy="12" r="2.5" />
     <Circle cx="18" cy="19" r="2.5" />
@@ -57,7 +53,7 @@ export const ShareIcon = memo(props => (
 ));
 
 export const StarIcon = memo(props => (
-  <Icon {...defaults} {...props}>
+  <Icon {...props}>
     <Path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.5 6.8 19.1l1-5.8L3.5 9.2l5.9-.9L12 3z" />
   </Icon>
 ));

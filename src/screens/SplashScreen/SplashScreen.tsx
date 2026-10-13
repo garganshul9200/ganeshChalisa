@@ -1,11 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {
-  Animated,
-  Image,
-  StatusBar,
-  StyleSheet,
-  View,
-} from 'react-native';
+import {Animated, Image, StyleSheet, View} from 'react-native';
 import imagePath from '../../constants/imagePath';
 
 const SPLASH_DURATION_MS = 3000;
@@ -39,11 +33,6 @@ function SplashScreen({onFinish}: SplashScreenProps) {
 
   return (
     <View style={styles.container}>
-      <StatusBar
-        barStyle="light-content"
-        translucent
-        backgroundColor="transparent"
-      />
       <Animated.View
         style={[styles.imageWrap, {opacity, transform: [{scale}]}]}>
         <Image

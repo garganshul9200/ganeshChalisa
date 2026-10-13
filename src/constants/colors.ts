@@ -59,5 +59,3 @@ export type ThemeColors = {
 export function getThemeColors(mode: ThemeMode): ThemeColors {
   return mode === 'dark' ? darkTheme : lightTheme;
 }
-
-export const colors = lightTheme;

@@ -1,0 +1,91 @@
+export const translations = {
+  hindi: {
+    appArtist: 'गणेश चालीसा',
+    heroTitle: 'श्री गणेश चालीसा',
+    heroTagline: 'आशीर्वाद पाएँ, विघ्न हटाएँ, ज्ञान बढ़ाएँ',
+    readChalisa: 'चालीसा पढ़ें',
+    listenNow: 'अभी सुनें',
+    explore: 'और जानें',
+    ganeshAarti: 'गणेश आरती',
+    ganeshAartiSubtitle: 'दिव्य ऊर्जा का अनुभव करें',
+    ganeshMantra: 'गणेश मंत्र',
+    ganeshMantraSubtitle: 'सकारात्मकता के लिए जाप करें',
+    names108: '108 नाम',
+    names108Subtitle: 'अष्टोत्तर शतनामावली',
+    wallpapers: 'दिव्य वॉलपेपर',
+    wallpapersSubtitle: 'सुंदर एचडी छवियाँ',
+    shlokaTranslation: 'भगवान गणेश आपके जीवन के सभी विघ्न दूर करें।',
+    nowPlayingBadge: 'अभी चल रहा है',
+    pausedBadge: 'रुका हुआ',
+    loadingBadge: 'लोड हो रहा है…',
+    audioUnavailable: 'ऑडियो उपलब्ध नहीं',
+    audioUnavailableMessage: 'इस पाठ के लिए ऑडियो अभी उपलब्ध नहीं है।',
+    playbackError: 'प्लेबैक त्रुटि',
+    playbackErrorMessage: 'ऑडियो चलाने में समस्या हुई। कृपया पुनः प्रयास करें।',
+    comingSoon: 'जल्द आ रहा है',
+    readDevotion: 'भक्ति से पढ़ें और जीवन में सकारात्मकता लाएं।',
+    changeLanguage: 'भाषा बदलें',
+    changeTheme: 'थीम बदलें',
+    shareApp: 'ऐप शेयर करें',
+    rateApp: 'ऐप रेट करें',
+    languageHindi: 'हिंदी',
+    languageEnglish: 'English',
+    cancel: 'रद्द करें',
+    rateAppTitle: 'गणेश चालीसा को रेट करें',
+    rateAppUnavailable:
+      'कृपया रिव्यू देने के लिए हमारे ऐप स्टोर पेज पर जाएँ।',
+    shareTitle: 'श्री गणेश चालीसा',
+    changeFontSize: 'फ़ॉन्ट आकार बदलें',
+    openMenu: 'मेनू खोलें',
+  },
+  english: {
+    appArtist: 'Ganesh Chalisa',
+    heroTitle: 'Shri Ganesh Chalisa',
+    heroTagline: 'Seek Blessings, Remove Obstacles, Invite Wisdom',
+    readChalisa: 'Read Chalisa',
+    listenNow: 'Listen Now',
+    explore: 'Explore',
+    ganeshAarti: 'Ganesh Aarti',
+    ganeshAartiSubtitle: 'Feel the divine energy',
+    ganeshMantra: 'Ganesh Mantra',
+    ganeshMantraSubtitle: 'Chant for positivity',
+    names108: '108 Names',
+    names108Subtitle: 'Ashtottara Shatanamavali',
+    wallpapers: 'Divine Wallpapers',
+    wallpapersSubtitle: 'Beautiful HD images',
+    shlokaTranslation:
+      'May Lord Ganesha remove all obstacles from your life.',
+    nowPlayingBadge: 'NOW PLAYING',
+    pausedBadge: 'PAUSED',
+    loadingBadge: 'LOADING…',
+    audioUnavailable: 'Audio unavailable',
+    audioUnavailableMessage:
+      'Audio is not available for this path yet.',
+    playbackError: 'Playback error',
+    playbackErrorMessage: 'Could not play audio. Please try again.',
+    comingSoon: 'Coming soon',
+    readDevotion: 'Read with devotion and bring positivity into life.',
+    changeLanguage: 'Change Language',
+    changeTheme: 'Change Theme',
+    shareApp: 'Share App',
+    rateApp: 'Rate App',
+    languageHindi: 'हिंदी',
+    languageEnglish: 'English',
+    cancel: 'Cancel',
+    rateAppTitle: 'Rate Ganesh Chalisa',
+    rateAppUnavailable:
+      'Please visit our app store page to leave a review.',
+    shareTitle: 'Shri Ganesh Chalisa',
+    changeFontSize: 'Change font size',
+    openMenu: 'Open menu',
+  },
+};
+
+export function getTranslations(language) {
+  return translations[language] || translations.english;
+}
+
+/** App UI uses hindi|english; scripture JSON uses hindi|hinglish. */
+export function getContentLanguage(language) {
+  return language === 'english' ? 'hinglish' : 'hindi';
+}

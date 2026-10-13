@@ -1,4 +1,4 @@
-package com.ganeshchalisa
+package com.ganeshChalisa.app
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
